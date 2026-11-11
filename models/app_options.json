@@ -1,0 +1,376 @@
+{
+  "input_columns": [
+    "Location",
+    "Year",
+    "Kilometers_Driven",
+    "Fuel_Type",
+    "Transmission",
+    "Owner_Type",
+    "Mileage",
+    "Engine",
+    "Power",
+    "Brand",
+    "Model"
+  ],
+  "n_train": 4812,
+  "test_mae": 1.934,
+  "locations": [
+    "Ahmedabad",
+    "Bangalore",
+    "Chennai",
+    "Coimbatore",
+    "Delhi",
+    "Hyderabad",
+    "Jaipur",
+    "Kochi",
+    "Kolkata",
+    "Mumbai",
+    "Pune"
+  ],
+  "fuel_types": [
+    "CNG",
+    "Diesel",
+    "LPG",
+    "Petrol"
+  ],
+  "transmissions": [
+    "Automatic",
+    "Manual"
+  ],
+  "owner_types": [
+    "First",
+    "Second",
+    "Third",
+    "Fourth & Above"
+  ],
+  "brands": [
+    "Audi",
+    "BMW",
+    "Bentley",
+    "Chevrolet",
+    "Datsun",
+    "Fiat",
+    "Force",
+    "Ford",
+    "Honda",
+    "Hyundai",
+    "Isuzu",
+    "Jaguar",
+    "Jeep",
+    "Land Rover",
+    "Mahindra",
+    "Maruti",
+    "Mercedes-Benz",
+    "Mini",
+    "Mitsubishi",
+    "Nissan",
+    "Porsche",
+    "Renault",
+    "Skoda",
+    "Tata",
+    "Toyota",
+    "Volkswagen",
+    "Volvo"
+  ],
+  "models_by_brand": {
+    "Audi": [
+      "A3",
+      "A4",
+      "A6",
+      "A7",
+      "A8",
+      "Q3",
+      "Q5",
+      "Q7",
+      "RS5",
+      "TT"
+    ],
+    "BMW": [
+      "1",
+      "3",
+      "5",
+      "6",
+      "7",
+      "X1",
+      "X3",
+      "X5",
+      "X6",
+      "Z4"
+    ],
+    "Bentley": [
+      "Continental"
+    ],
+    "Chevrolet": [
+      "Aveo",
+      "Beat",
+      "Captiva",
+      "Cruze",
+      "Enjoy",
+      "Optra",
+      "Sail",
+      "Spark",
+      "Tavera"
+    ],
+    "Datsun": [
+      "GO",
+      "Redi",
+      "redi-GO"
+    ],
+    "Fiat": [
+      "Avventura",
+      "Grande",
+      "Linea",
+      "Punto",
+      "Siena"
+    ],
+    "Force": [
+      "One"
+    ],
+    "Ford": [
+      "Aspire",
+      "Classic",
+      "EcoSport",
+      "Ecosport",
+      "Endeavour",
+      "Fiesta",
+      "Figo",
+      "Freestyle",
+      "Fusion",
+      "Ikon",
+      "Mustang"
+    ],
+    "Honda": [
+      "Accord",
+      "Amaze",
+      "BR-V",
+      "BRV",
+      "Brio",
+      "CR-V",
+      "City",
+      "Civic",
+      "Jazz",
+      "Mobilio",
+      "WR-V",
+      "WRV"
+    ],
+    "Hyundai": [
+      "Accent",
+      "Creta",
+      "EON",
+      "Elantra",
+      "Elite",
+      "Getz",
+      "Grand",
+      "Santa",
+      "Santro",
+      "Sonata",
+      "Tucson",
+      "Verna",
+      "Xcent",
+      "i10",
+      "i20"
+    ],
+    "Isuzu": [
+      "D-MAX"
+    ],
+    "Jaguar": [
+      "F",
+      "XE",
+      "XF",
+      "XJ"
+    ],
+    "Jeep": [
+      "Compass"
+    ],
+    "Land Rover": [
+      "Discovery",
+      "Freelander",
+      "Range Rover"
+    ],
+    "Mahindra": [
+      "Bolero",
+      "Jeep",
+      "KUV",
+      "Logan",
+      "NuvoSport",
+      "Quanto",
+      "Renault",
+      "Scorpio",
+      "Ssangyong",
+      "TUV",
+      "Thar",
+      "Verito",
+      "XUV300",
+      "XUV500",
+      "Xylo"
+    ],
+    "Maruti": [
+      "1000",
+      "800",
+      "A-Star",
+      "Alto",
+      "Baleno",
+      "Celerio",
+      "Ciaz",
+      "Dzire",
+      "Eeco",
+      "Ertiga",
+      "Esteem",
+      "Estilo",
+      "Grand",
+      "Ignis",
+      "Omni",
+      "Ritz",
+      "S",
+      "S-Cross",
+      "SX4",
+      "Swift",
+      "Versa",
+      "Vitara",
+      "Wagon",
+      "Zen"
+    ],
+    "Mercedes-Benz": [
+      "A",
+      "B",
+      "C-Class",
+      "CLA",
+      "CLS-Class",
+      "E-Class",
+      "GL-Class",
+      "GLA",
+      "GLC",
+      "GLE",
+      "GLS",
+      "M-Class",
+      "New",
+      "R-Class",
+      "S",
+      "S-Class",
+      "SL-Class",
+      "SLC",
+      "SLK-Class"
+    ],
+    "Mini": [
+      "Clubman",
+      "Cooper",
+      "Countryman"
+    ],
+    "Mitsubishi": [
+      "Cedia",
+      "Lancer",
+      "Montero",
+      "Outlander",
+      "Pajero"
+    ],
+    "Nissan": [
+      "Evalia",
+      "Micra",
+      "Sunny",
+      "Teana",
+      "Terrano",
+      "X-Trail"
+    ],
+    "Porsche": [
+      "Boxster",
+      "Cayenne",
+      "Cayman",
+      "Panamera"
+    ],
+    "Renault": [
+      "Captur",
+      "Duster",
+      "Fluence",
+      "KWID",
+      "Koleos",
+      "Lodgy",
+      "Pulse",
+      "Scala"
+    ],
+    "Skoda": [
+      "Fabia",
+      "Laura",
+      "Octavia",
+      "Rapid",
+      "Superb",
+      "Yeti"
+    ],
+    "Tata": [
+      "Bolt",
+      "Hexa",
+      "Indica",
+      "Indigo",
+      "Manza",
+      "Nano",
+      "New",
+      "Nexon",
+      "Safari",
+      "Sumo",
+      "Tiago",
+      "Tigor",
+      "Venture",
+      "Xenon",
+      "Zest"
+    ],
+    "Toyota": [
+      "Camry",
+      "Corolla",
+      "Etios",
+      "Fortuner",
+      "Innova",
+      "Prius",
+      "Qualis"
+    ],
+    "Volkswagen": [
+      "Ameo",
+      "Beetle",
+      "CrossPolo",
+      "Jetta",
+      "Passat",
+      "Polo",
+      "Tiguan",
+      "Vento"
+    ],
+    "Volvo": [
+      "S60",
+      "S80",
+      "V40",
+      "XC60",
+      "XC90"
+    ]
+  },
+  "ranges": {
+    "Year": [
+      1998,
+      2019
+    ],
+    "Kilometers_Driven": [
+      200,
+      200000
+    ],
+    "Engine": [
+      624,
+      5998
+    ],
+    "Power": [
+      34.0,
+      552.0
+    ],
+    "Mileage": [
+      6.0,
+      26.0
+    ]
+  },
+  "default": {
+    "Brand": "Maruti",
+    "Model": "Swift",
+    "Location": "Mumbai",
+    "Fuel_Type": "Petrol",
+    "Transmission": "Manual",
+    "Year": 2015,
+    "Kilometers_Driven": 50000,
+    "Engine": 1248,
+    "Power": 74.0,
+    "Mileage": 20.7
+  }
+}
